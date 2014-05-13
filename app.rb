@@ -10,7 +10,9 @@ class App < Sinatra::Base
       'title' => "Bootstrap theme test",
       'doctype' => "<html lang='en' xmlns='http://www.w3.org/1999/xhtml'>",
       'content' => IO.read("sample-content.html"),
-      'toc' => IO.read("sample-toc.html")
+      'toc' => IO.read("sample-toc.html"),
+      'prev_link' => "Previous",
+      'next_link' => "Next"
     }
 
     @template = Liquid::Template.parse(IO.read("theme/html/layout.html"))
