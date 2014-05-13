@@ -46,3 +46,10 @@ body {
 	color: #ccc;
 	font-size: 200%;
 }
+
+.disqus {
+	border-style:solid;
+	border-top:1px single black;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}

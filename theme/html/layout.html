@@ -29,22 +29,19 @@
           <a class="title" href="#">{{ title }}</a>
         </div>
 
-    <div class="collapse navbar-collapse navbar-ex1-collapse">
-
-
-        <div class="col-sm-3 col-md-3 pull-right">
+        <div class="container">
+           <div class="col-sm-3 col-md-3 pull-right">
 	        <form class="navbar-form" role="search">
-	        <div class="input-group">
-	            <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
-	            <div class="input-group-btn">
-	                <button class="btn btn-default search-button" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-	            </div>
-	        </div>
+	           <div class="input-group">
+	              <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+	              <div class="input-group-btn">
+	                 <button class="btn btn-default search-button" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+	              </div>
+	           </div>
 	        </form>
+           </div>
         </div>
-
-    </div>
-      </div>
+       </div>
     </div>
 
     <div class="container">
@@ -57,14 +54,26 @@
     </div>
 
   
-    <div class="pagination">
-        <a href="{{ prev_link }}"><span class="glyphicon glyphicon-chevron-left"></span></a>
-        <a href="{{ next_link }}"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    <div class="container">
+	<div class="row">
+          <div class="col-md-12 pagination">
+	     <a href="{{ prev_link }}" class="btn"><span class="glyphicon glyphicon-chevron-left"></span> Prev</a>
+	     <a href="{{ next_link }}" class="btn">Next <span class="glyphicon glyphicon-chevron-right"></span></a>
+          </div>
+       </div>
+    </div>
+
+    <div class="container">
+       <div class="row">
+          <div class="col-md-12 disqus">
+	     <div id="disqus_thread"></div>
+	   </div>
+       </div>
     </div>
  
     <div class="footer">
       <footer>
-        <p>&copy; Company 2014</p>
+        <p>&copy; O'Reilly Media, 2014</p>
       </footer>
     </div>
 
@@ -74,5 +83,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="../../dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="theme/html/javascripts/disqus.js"></script>
+
   </body>
 </html>
